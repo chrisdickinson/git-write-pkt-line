@@ -23,20 +23,17 @@ function fourbyte(num) {
   while(num.length < 4) {
     num = '0'+num
   }
-  SIZE[0] = num.charCodeAt(0)
-  SIZE[1] = num.charCodeAt(1)
-  SIZE[2] = num.charCodeAt(2)
-  SIZE[3] = num.charCodeAt(3)
+  SIZE.writeUInt8(num.charCodeAt(0), 0)
+  SIZE.writeUInt8(num.charCodeAt(1), 1)
+  SIZE.writeUInt8(num.charCodeAt(2), 2)
+  SIZE.writeUInt8(num.charCodeAt(3), 3)
   return SIZE
 }
 
 function line(buf) {
   // send flush-pkt if !buf
   if(!buf) {
-    SIZE[0] =
-    SIZE[1] =
-    SIZE[2] =
-    SIZE[3] = 48 
+    SIZE.writeUInt32BE(0x30303030, 0)
     return SIZE
   }
 

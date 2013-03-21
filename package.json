@@ -17,6 +17,16 @@
     "packet",
     "line"
   ],
+  "testling": {
+    "files": "test.js",
+    "browsers": [
+      "ie/9..latest",
+      "firefox/10..latest",
+      "chrome/20..latest",
+      "safari/latest",
+      "iphone/6", "ipad/6"
+    ]
+  },
   "author": "Chris Dickinson <chris@neversaw.us>",
   "license": "MIT",
   "gitHead": "51d0c420f08b8374dd53e93f6ce2896e79158d9c",
