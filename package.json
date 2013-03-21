@@ -1,0 +1,29 @@
+{
+  "name": "git-write-pkt-line",
+  "version": "0.0.0",
+  "description": "write git packet lines (for smart remote protocol)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisdickinson/git-write-pkt-line.git"
+  },
+  "keywords": [
+    "git",
+    "write",
+    "pkt",
+    "packet",
+    "line"
+  ],
+  "author": "Chris Dickinson <chris@neversaw.us>",
+  "license": "MIT",
+  "gitHead": "51d0c420f08b8374dd53e93f6ce2896e79158d9c",
+  "dependencies": {
+    "through": "~2.2.7"
+  },
+  "devDependencies": {
+    "tape": "~0.3.0"
+  }
+}
