@@ -1,17 +1,16 @@
 var test = require('tape')
   , send = require('./index')
-  , Buffer = require('buffer').Buffer
+  , binary = require('bops')
 
 test('works as expected', function(assert) {
   var stream = send()
     , expect = ['0007hi\n', '0032want 0000000000000000000000000000000000000000\n', '0000', '0007hi\n']
-    , data = ['hi', 'want 0000000000000000000000000000000000000000', '', new Buffer('hi', 'utf8')]
+    , data = ['hi', 'want 0000000000000000000000000000000000000000', '', binary.from('hi', 'utf8')]
     , idx = 0
 
 
   stream.on('data', function(d) {
-    assert.ok(Buffer.isBuffer(d))
-    assert.equal(d+'', expect[idx]) 
+    assert.equal(binary.to(d, 'utf8'), expect[idx]) 
   })
 
   do {
