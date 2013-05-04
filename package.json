@@ -36,6 +36,6 @@
     "bops": "0.0.2"
   },
   "devDependencies": {
-    "tape": "~0.3.0"
+    "tape": "~1.0.1"
   }
 }
