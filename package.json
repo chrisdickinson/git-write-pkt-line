@@ -33,7 +33,7 @@
   "gitHead": "51d0c420f08b8374dd53e93f6ce2896e79158d9c",
   "dependencies": {
     "through": "~2.2.7",
-    "bops": "0.0.1"
+    "bops": "0.0.2"
   },
   "devDependencies": {
     "tape": "~0.3.0"
