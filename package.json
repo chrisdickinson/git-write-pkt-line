@@ -1,6 +1,6 @@
 {
   "name": "git-write-pkt-line",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "write git packet lines (for smart remote protocol)",
   "main": "index.js",
   "scripts": {
